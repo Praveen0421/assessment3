@@ -1,0 +1,56 @@
+<!-- employee list section start -->
+<section class="employee-list">
+    <!-- start employee header -->
+    <header class="employee-header">
+        <h1>Employee</h1>
+        <!-- search-and-addbtn-block start -->
+        <div class="search-and-addbtn-block">
+            <!-- search-block -->
+            <div class="search-block">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" class="search-box" placeholder="search">
+            </div>
+            <!-- add employee button -->
+            <button class="addbtn" routerLink="/employeeform" routerLinkActive="router-link-active" >Add Employee</button>
+        </div>
+        <!-- search-and-addbtn-block end -->
+    </header>
+        <!-- end employee header -->
+    <div class="table-container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Department</th>
+                    <th>Address</th>
+                    <th>Contact Number</th>
+                    <th>Description</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let data of employee ">
+                    <td>{{data.firstname}}</td>
+                    <td>{{data.lastname}}</td>
+                    <td>{{data.email}}</td>
+                    <td>{{data.department}}</td>
+                    <td>{{data.address}}</td>
+                    <td>{{data.contactnumber}}</td>
+                    <td>{{data.description}}</td>
+                    <td>{{data.status}}</td>
+                    <td>
+                        <div class="action-btn-block">
+                            <i class="fa-regular fa-pen-to-square action-btn edit-btn" title="Edit" routerLink="/employeeupdate/:id" routerLinkActive="router-link-active" ></i>
+                            <i class="fa-regular fa-trash-can action-btn delete-btn" (click)="delete(data.id)" title="Delete"></i>
+                        </div>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+<!-- employee list section end -->

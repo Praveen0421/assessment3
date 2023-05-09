@@ -1,0 +1,17 @@
+{
+  "employeeData": [
+    {
+      "firstname": "Praveen",
+      "lastname": "Patel",
+      "department": "Frontend",
+      "address": "qwdwqdwdwq",
+      "email": "jay@gmail.com",
+      "contactnumber": 42435346,
+      "description": "dgdbfbfgnb",
+      "password": "123456789",
+      "confirmpassword": "123456789",
+      "status": "Active",
+      "id": 1
+    }
+  ]
+}

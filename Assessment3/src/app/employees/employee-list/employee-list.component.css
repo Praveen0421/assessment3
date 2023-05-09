@@ -1,0 +1,34 @@
+.employee-list{
+    height: 100%;
+    padding: 10px 200px;
+}
+/* employee header */
+.employee-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* search-and-addbtn-block */
+.search-and-addbtn-block{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+/* table-container */
+.table-container{
+    height: 100%;
+}
+/* table */
+.table{
+    text-align: left;
+    width: 100%;
+    height: 100%;
+}
+.table,td,th{
+    border: 1px solid #333;
+    border-collapse:collapse
+}
+/* action btn */
+.action-btn{
+    cursor:pointer;
+}

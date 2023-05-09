@@ -1,0 +1,13 @@
+.header{
+background-color: aqua;
+    padding: 20px  200px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.select-user{
+    display: flex;
+    gap: 10px;
+}

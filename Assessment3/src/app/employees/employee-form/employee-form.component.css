@@ -1,0 +1,21 @@
+.employee-form{
+    height: 100%;
+    padding: 10px 200px;
+}
+/* input block */
+.input-block{
+    display: flex;
+}
+/* form */
+.form{
+    width: 100%;
+}
+.invalid {
+    border: 1px solid red;
+}
+
+.feedback {
+    font-size: 14px;
+    margin-top: 5px;
+    color: red;
+}
